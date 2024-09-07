@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e64e79, #e56fc9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#contenedor1 {
+    display: flex;
+    margin-top: auto;
+}
+h2 {
+    color:#f9f9f9;
+    text-align: center;
+}
+h1 {
+    color:#f9f9f9;
+    text-align: center;
+}
+form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limita el ancho del formulario */
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #7aa5e2;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #f967a9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón de enviar ocupe todo el ancho del formulario */
+}
+
+input[type="submit"]:hover {
+    background-color: #e4448f;
+}
