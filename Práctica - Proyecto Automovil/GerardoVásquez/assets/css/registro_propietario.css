@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h2 {
+    color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    top: 170px;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Ajusta según sea necesario */
+    margin: auto;
+}
+
+.contenedorfila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contenedorcolumna {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre columnas */
+}
+
+.contenedorcolumna:last-child {
+    margin-right: 0; /* Eliminar margen en la última columna */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #7aa5e2;
+}
+
+input[type="submit"] {
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #39e2bb;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%; /* Ajusta el ancho del botón */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+input[type="submit"]:hover {
+    background-color: #19c3aa;
+}
+
+#botoncito {
+    text-align: center;
+}
+
+#inicio{
+    position: absolute;
+    margin: 20px;
+    left: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#inicio:hover {
+    background-color: #a8acac;
+
+}
